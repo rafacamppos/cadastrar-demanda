@@ -23,42 +23,42 @@ public class Demanda implements Serializable{
 	private String email;
 	private String cpfOuCnpj;
 	
-	@JsonFormat(pattern = "dd/MM/yyyy")
-	private Date dataRetirada;
+//	@JsonFormat(pattern = "dd/MM/yyyy")
+//	private Date dataRetirada;
+//	
+//	@JsonFormat(pattern = "dd/MM/yyyy")
+//	private Date dataEntrega;
+//	
+//	private Double valorCarga;
 	
-	@JsonFormat(pattern = "dd/MM/yyyy")
-	private Date dataEntrega;
-	
-	private Double valorCarga;
-	
-	public Date getDataRetirada() {
-		return dataRetirada;
-	}
-
-
-	public Date getDataEntrega() {
-		return dataEntrega;
-	}
-
-
-	public Double getValorCarga() {
-		return valorCarga;
-	}
-
-
-	public void setDataRetirada(Date dataRetirada) {
-		this.dataRetirada = dataRetirada;
-	}
-
-
-	public void setDataEntrega(Date dataEntrega) {
-		this.dataEntrega = dataEntrega;
-	}
-
-
-	public void setValorCarga(Double valorCarga) {
-		this.valorCarga = valorCarga;
-	}
+//	public Date getDataRetirada() {
+//		return dataRetirada;
+//	}
+//
+//
+//	public Date getDataEntrega() {
+//		return dataEntrega;
+//	}
+//
+//
+//	public Double getValorCarga() {
+//		return valorCarga;
+//	}
+//
+//
+//	public void setDataRetirada(Date dataRetirada) {
+//		this.dataRetirada = dataRetirada;
+//	}
+//
+//
+//	public void setDataEntrega(Date dataEntrega) {
+//		this.dataEntrega = dataEntrega;
+//	}
+//
+//
+//	public void setValorCarga(Double valorCarga) {
+//		this.valorCarga = valorCarga;
+//	}
 
 
 	private TipoCarga tipoCliente;
@@ -170,16 +170,15 @@ public class Demanda implements Serializable{
 	}
 
 
-	public Demanda(Integer id, String nome, String email, String cpfOuCnpj, Date dataRetirada, Date dataEntrega,
-			Double valorCarga, TipoCarga tipoCliente, EnderecoOrigem enderecoOrigem, EnderecoDestino enderecoDestino) {
+	public Demanda(Integer id, String nome, String email, String cpfOuCnpj, TipoCarga tipoCliente, EnderecoOrigem enderecoOrigem, EnderecoDestino enderecoDestino) {
 		super();
 		this.id = id;
 		this.nome = nome;
 		this.email = email;
 		this.cpfOuCnpj = cpfOuCnpj;
-		this.dataRetirada = dataRetirada;
-		this.dataEntrega = dataEntrega;
-		this.valorCarga = valorCarga;
+		//this.dataRetirada = dataRetirada;
+		//this.dataEntrega = dataEntrega;
+		//this.valorCarga = valorCarga;
 		this.tipoCliente = tipoCliente;
 		this.enderecoOrigem = enderecoOrigem;
 		this.enderecoDestino = enderecoDestino;

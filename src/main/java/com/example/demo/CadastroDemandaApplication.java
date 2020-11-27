@@ -30,12 +30,12 @@ public class CadastroDemandaApplication implements CommandLineRunner{
 		EnderecoOrigem  enderecoOrigem = new EnderecoOrigem("apto", "198", "xxxx", "zzzzz", "sssss", "sssss", "sssss");
 		EnderecoDestino  enderecoDestino = new EnderecoDestino(null, "apto", "198", "xxxx", "zzzzz", "sssss", "sssss", "sss");
 		
-//		Demanda demanda1 = new Demanda(null, "sss", "aaaaa", "aaaaaa", TipoCarga.CARGA_VIVA);
-//		
-//		demanda1.setEnderecoOrigem(enderecoOrigem);
-//		demanda1.setEnderecoDestino(enderecoDestino);
-//		
-//		demandaRepository.save(demanda1);
+		Demanda demanda1 = new Demanda(null, "sss", "aaaaa", "aaaaaa", TipoCarga.CARGA_VIVA, enderecoOrigem, enderecoDestino);
+		
+		//demanda1.setEnderecoOrigem(enderecoOrigem);
+		//demanda1.setEnderecoDestino(enderecoDestino);
+		
+		demandaRepository.save(demanda1);
 		
 		
 		
