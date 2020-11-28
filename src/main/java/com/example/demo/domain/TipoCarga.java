@@ -1,4 +1,4 @@
-package com.example.demo.domain.enums;
+package com.example.demo.domain;
 
 public enum TipoCarga {
 	
